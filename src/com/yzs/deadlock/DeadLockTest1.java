@@ -24,12 +24,15 @@ public class DeadLockTest1 {
 					try {
 						// 休眠一下下，让另一个线程有足够的时间去占有另一个资源
 						Thread.sleep(50);
+						
 					} catch (Exception e) {
 
 					}
 					// thread2去占有牛奶,如果不能占有，thread1将会一直等待
 					synchronized (resource2) {
+						
 						System.out.println("Thread1:占有了  " + resource2);
+						
 					}
 				}
 			}
