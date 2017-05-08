@@ -22,7 +22,7 @@ public class DeadLockTest1 {
 					// 成功持有面包
 					System.out.println("Thread1:占有了  " + resource1);
 					try {
-						// 休眠一下下，让另一个线程有足够的时间去占有另一个线程
+						// 休眠一下下，让另一个线程有足够的时间去占有另一个资源
 						Thread.sleep(50);
 					} catch (Exception e) {
 
